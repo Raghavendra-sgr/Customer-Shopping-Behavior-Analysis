@@ -449,7 +449,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 # ---------------- LOAD DATA ----------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("customer_shopping_behavior.csv")
+    df = pd.read_csv("data/customer_shopping_behavior.csv")
     df.columns = df.columns.str.strip()
     return df
 
